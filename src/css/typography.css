@@ -22,7 +22,7 @@ body {
 }
 
 body {
-  font-family: Book, Arial, Helvetica, sans-serif;
+  font-family: 'Book', Arial, Helvetica, sans-serif;
   color: var(--colorBlack);
   line-height: 1.6;
   text-rendering: optimizeLegibility;

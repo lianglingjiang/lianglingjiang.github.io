@@ -1,8 +1,8 @@
 @import '../../css/variables.css';
 
 .header {
-  background: var(--colorBlack);
-  color: var(--colorWhite);
+  background: var(--colorWhite);
+  color: var(--colorBlack);
   position: fixed;
   top: 0;
   left: 0;
@@ -26,6 +26,7 @@
 .title {
   font-family: Medium, Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
+  margin-left: 10px;
 }
 
 @media (--small) {

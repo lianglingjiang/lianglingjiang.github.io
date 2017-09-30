@@ -1,9 +1,9 @@
 {
-  "name": "oliverbenns",
+  "name": "liang lingjiang",
   "version": "1.0.0",
   "description": "",
   "license": "MIT",
-  "author": "Oliver Benns",
+  "author": "Liang Lingjiang",
   "dependencies": {
     "classnames": "^2.2.5",
     "gatsby": "^1.8.4",

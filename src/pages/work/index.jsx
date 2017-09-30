@@ -10,15 +10,16 @@ import styles from './styles.module.css';
 
 const Work = ({ location }) => (
   <div>
-    <Meta title="Work" description="Web applications, static websites and mobile apps built built by or collaboratively with Oliver Benns." location={location} />
+    <Meta title="Work" description="Design by Liang Lingjiang" location={location} />
+    <Wrapper className={styles.profolio}>
+      {projects.map(project => <ProjectPanel project={project} key={project.slug} />)}
 
-    {projects.map(project => <ProjectPanel project={project} key={project.slug} />)}
-
-    <div className={styles.contact}>
-      <Wrapper>
-        <Contact title="Your project here?" />
-      </Wrapper>
-    </div>
+      <div className={styles.contact}>
+        <Wrapper>
+          <Contact title="Your project here?" />
+        </Wrapper>
+      </div>
+    </Wrapper>
   </div>
 );
 

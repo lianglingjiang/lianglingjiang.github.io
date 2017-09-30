@@ -10,7 +10,7 @@ const Contact = ({ title }) => (
     <h1>{title || 'I like messages.'}</h1>
     <p className={styles.email}>
       Say hello and send an email:<br />
-      <a href="mailto:info@oliverbenns.com?subject=Hello%20Oliver!" className={styles.link}>info@oliverbenns.com</a>
+      <a href="mailto:lianglj@yahoo.com?subject=Hello%20Liang!" className={styles.link}>lianglj@yahoo.com</a>
     </p>
     <div className={styles.lineBreak} />
     <ul className={styles.social}>

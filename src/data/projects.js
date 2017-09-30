@@ -1,23 +1,23 @@
 const projects = [
   {
-    className: 'click',
-    description: 'Australia\'s first mobile App that helps busy families quickly find and secure available childcare.',
+    className: 'Project 1',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     links: {
-      ios: 'https://itunes.apple.com/app/id1175973285',
-      android: 'https://play.google.com/store/apps/details?id=com.clickchildcareapp',
+      website: 'https://example.com',
     },
-    slug: 'click-childcare',
-    title: 'Click Childcare',
-    cover: require('./click.png'),
+    slug: 'project01',
+    title: 'Lorem ipsum',
+    cover: require('./kindynow.png'),
     theme: {
-      background: '#00a5d1',
+      background: '#F7F7F7',
+      light: true,
     },
   },
   {
-    className: 'kindyNow',
-    description: 'Web app to allow childcare centre managers to monitor and control absences, bookings and capacities.',
+    className: 'Lorem Ipsum',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     links: {
-      website: 'https://kindynow.com/admin',
+      website: 'https://example.com',
     },
     slug: 'kindynow',
     title: 'KindyNow',
@@ -25,6 +25,20 @@ const projects = [
     theme: {
       background: '#F7F7F7',
       light: true,
+    },
+  },
+  {
+    className: 'click',
+    description: 'Australia\'s first mobile App that helps busy families quickly find and secure available childcare.',
+    links: {
+      ios: '',
+      android: '',
+    },
+    slug: 'click-childcare',
+    title: 'Click Childcare',
+    cover: require('./click.png'),
+    theme: {
+      background: '#000',
     },
   },
   {

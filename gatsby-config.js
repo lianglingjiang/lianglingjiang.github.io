@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: 'Oliver Benns',
-    url: 'https://oliverbenns.com',
-    description: 'Oliver Benns is a freelance web developer working with individuals and agencies across the world.',
+    title: 'Liang Lingjiang',
+    url: 'https://lianglingjiang.com',
+    description: 'I am a Product Designer who designs System Products for Enterprises and Business.',
   },
   plugins: [
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-42854706-1',
+        trackingId: '',
       },
     },
   ],

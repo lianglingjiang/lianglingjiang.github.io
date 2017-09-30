@@ -1,0 +1,613 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/.cache/dev-404-page.js",
+      "path": "/dev-404-page/",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/.cache/dev-404-page.js",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0eab4b70649c5ac2b37ab68717b82616",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-page-creator": {
+      "resolve": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "name": "component-page-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "packageJson": {
+        "name": "component-page-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin component-page-creator",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "1a24d95d077e81bd7da47292d94b957e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-layout-creator": {
+      "resolve": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "name": "component-layout-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "packageJson": {
+        "name": "component-layout-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/layouts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin component-layout-creator",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "75e205949bad965e12f2b346641b1be7",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin internal-data-bridge",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "99bde5f2e3dff4a33e89e65a498278e8",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin dev-404-page",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e26c51de51cd69cd3669876779883ab2",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin prod-404",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "cdeb93503d4f8beb1cece3243f42bda5",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin query-runner",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "3fe1f946ad2f80b59078ef1c420a06b7",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-google-analytics": {
+      "resolve": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby-plugin-google-analytics",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "1.0.3",
+      "pluginOptions": {
+        "plugins": [],
+        "trackingId": ""
+      },
+      "pluginFilepath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "1.0.3",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "dependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-plugin-google-analytics",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "f5a9fcee9aa611be8d015b3a42de1d57",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite",
+      "name": "default-site-plugin",
+      "version": "bcae565016190dfdbf60c07c15c67fec",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite",
+      "packageJson": {
+        "name": "liang lingjiang",
+        "description": "",
+        "version": "1.0.0",
+        "main": "n/a",
+        "author": "Liang Lingjiang",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "classnames",
+            "version": "^2.2.5"
+          },
+          {
+            "name": "gatsby",
+            "version": "^1.8.4"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "^1.6.7"
+          },
+          {
+            "name": "gatsby-plugin-google-analytics",
+            "version": "^1.0.3"
+          },
+          {
+            "name": "react-github-button",
+            "version": "^0.1.11"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.1.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-eslint",
+            "version": "^7.2.3"
+          },
+          {
+            "name": "eslint",
+            "version": "^4.4.1"
+          },
+          {
+            "name": "eslint-config-airbnb",
+            "version": "^15.1.0"
+          },
+          {
+            "name": "eslint-plugin-import",
+            "version": "^2.7.0"
+          },
+          {
+            "name": "eslint-plugin-jsx-a11y",
+            "version": "^6.0.2"
+          },
+          {
+            "name": "eslint-plugin-react",
+            "version": "^7.2.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin default-site-plugin",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "845bb4adf228c848aeb34cdfe1dfa247",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "Liang Lingjiang",
+        "url": "https://lianglingjiang.com",
+        "description": "I am a Product Designer who designs System Products for Enterprises and Business."
+      },
+      "port": "8000",
+      "host": "localhost",
+      "pathPrefix": "",
+      "buildTime": "2017-09-30T05:26:11.072Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "5f40da9fc66873806611bf1b6ca4f89d",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404/": {
+      "path": "/404/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/404.jsx",
+      "componentChunkName": "component---src-pages-404-jsx",
+      "layout": "index",
+      "jsonName": "404.json",
+      "internalComponentName": "Component404",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/404.jsx",
+      "id": "SitePage /404/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "eef6bb15f77db31a25f3c7550c3c33bd",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "path": "/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/index.jsx",
+      "componentChunkName": "component---src-pages-index-jsx",
+      "layout": "index",
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/index.jsx",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "19af1189421a303544e1c1f4cc4afb74",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "path": "/404.html",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/404.jsx",
+      "componentChunkName": "component---src-pages-404-jsx",
+      "layout": "index",
+      "jsonName": "404-html.json",
+      "internalComponentName": "Component404Html",
+      "context": {},
+      "pluginCreator___NODE": "Plugin prod-404",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/404.jsx",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "3ed7daf01b9df10cd6dbd9f3f09f4ea4",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /about/": {
+      "path": "/about/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/about/index.jsx",
+      "componentChunkName": "component---src-pages-about-index-jsx",
+      "layout": "index",
+      "jsonName": "about.json",
+      "internalComponentName": "ComponentAbout",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/about/index.jsx",
+      "id": "SitePage /about/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "55fd397bb7513df88d3ea1669432d65c",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /contact/": {
+      "path": "/contact/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/contact/index.jsx",
+      "componentChunkName": "component---src-pages-contact-index-jsx",
+      "layout": "index",
+      "jsonName": "contact.json",
+      "internalComponentName": "ComponentContact",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/contact/index.jsx",
+      "id": "SitePage /contact/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "e61516741dc7f0af413efa080b7b587c",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /work/": {
+      "path": "/work/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/index.jsx",
+      "componentChunkName": "component---src-pages-work-index-jsx",
+      "layout": "index",
+      "jsonName": "work.json",
+      "internalComponentName": "ComponentWork",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/index.jsx",
+      "id": "SitePage /work/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "516d056831be62f3138c05374518c232",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /work/ahm/": {
+      "path": "/work/ahm/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/ahm/index.jsx",
+      "componentChunkName": "component---src-pages-work-ahm-index-jsx",
+      "layout": "index",
+      "jsonName": "work-ahm.json",
+      "internalComponentName": "ComponentWorkAhm",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/ahm/index.jsx",
+      "id": "SitePage /work/ahm/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5870d1ef12da2f35605d71ed92275bfa",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /work/chadstone/": {
+      "path": "/work/chadstone/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/chadstone/index.jsx",
+      "componentChunkName": "component---src-pages-work-chadstone-index-jsx",
+      "layout": "index",
+      "jsonName": "work-chadstone.json",
+      "internalComponentName": "ComponentWorkChadstone",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/chadstone/index.jsx",
+      "id": "SitePage /work/chadstone/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "712f09181d16ea2204b8ce6d50d45cd9",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /work/click-childcare/": {
+      "path": "/work/click-childcare/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/click-childcare/index.jsx",
+      "componentChunkName": "component---src-pages-work-click-childcare-index-jsx",
+      "layout": "index",
+      "jsonName": "work-click-childcare.json",
+      "internalComponentName": "ComponentWorkClickChildcare",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/click-childcare/index.jsx",
+      "id": "SitePage /work/click-childcare/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "7fae685b0edbf31094b40653df9084ae",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /work/kindynow/": {
+      "path": "/work/kindynow/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/kindynow/index.jsx",
+      "componentChunkName": "component---src-pages-work-kindynow-index-jsx",
+      "layout": "index",
+      "jsonName": "work-kindynow.json",
+      "internalComponentName": "ComponentWorkKindynow",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/kindynow/index.jsx",
+      "id": "SitePage /work/kindynow/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "76e3e019367f7546ca58e712d6f2722b",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /work/life-with-bird/": {
+      "path": "/work/life-with-bird/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/life-with-bird/index.jsx",
+      "componentChunkName": "component---src-pages-work-life-with-bird-index-jsx",
+      "layout": "index",
+      "jsonName": "work-life-with-bird.json",
+      "internalComponentName": "ComponentWorkLifeWithBird",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/life-with-bird/index.jsx",
+      "id": "SitePage /work/life-with-bird/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5bdbf517be628b221d57377190dd47c2",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /work/mr-red/": {
+      "path": "/work/mr-red/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/mr-red/index.jsx",
+      "componentChunkName": "component---src-pages-work-mr-red-index-jsx",
+      "layout": "index",
+      "jsonName": "work-mr-red.json",
+      "internalComponentName": "ComponentWorkMrRed",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/mr-red/index.jsx",
+      "id": "SitePage /work/mr-red/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b15c824336243aafa330bea54726ee1e",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /work/project01/": {
+      "path": "/work/project01/",
+      "component": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/project01/index.jsx",
+      "componentChunkName": "component---src-pages-work-project-01-index-jsx",
+      "layout": "index",
+      "jsonName": "work-project-01.json",
+      "internalComponentName": "ComponentWorkProject01",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "componentPath": "/Users/lianglingjiang/Documents/Devspace/projects/mywebsite/src/pages/work/project01/index.jsx",
+      "id": "SitePage /work/project01/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0476cc2f4b3bc2d6df56f6aed1989803",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "0b3406590cd0d7ba487b87cc67419be5"
+  },
+  "componentDataDependencies": {
+    "nodes": {},
+    "connections": {
+      "SitePage": [
+        "/dev-404-page/"
+      ]
+    }
+  }
+}

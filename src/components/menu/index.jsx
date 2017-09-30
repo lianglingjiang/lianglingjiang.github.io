@@ -15,16 +15,16 @@ const Menu = ({ active, onNavClick }) => {
   return (
     <Fullscreen className={active ? styles.menu : styles.disable}>
       <Wrapper>
-        <nav>
+        <nav className={styles.navWrapper}>
           <ul>
             <li className={styles.item}>
               <Link {...linkProps} to="/">Home</Link>
             </li>
             <li className={styles.item}>
-              <Link {...linkProps} to="/about">About</Link>
+              <Link {...linkProps} to="/work">Work</Link>
             </li>
             <li className={styles.item}>
-              <Link {...linkProps} to="/work">Work</Link>
+              <Link {...linkProps} to="/about">About</Link>
             </li>
             <li className={styles.item}>
               <Link {...linkProps} to="/contact">Contact</Link>

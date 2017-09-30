@@ -1,5 +1,14 @@
 @import '../../css/variables.css';
 
+.profolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 50vh;
+}
+
 .contact {
   padding: 10vh 0;
 }

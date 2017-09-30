@@ -13,13 +13,16 @@ const Index = ({ location }) => (
     <Fullscreen className={styles.intro} firstItem>
       <Wrapper>
         <h1>
-          Hello. I’m Oliver Benns.
+          <br />
+          I am a Product Designer,
+          <br />
+          I design:
+          <br />
+          System Products for Enterprises.
           <br />
           <br />
-          I’m a freelance web developer.
           <br />
-          <br />
-          Check out my <Link className={styles.link} to="/work">work</Link>.
+          <h3>Check out my <Link className={styles.link} to="/work">work</Link>.</h3>
         </h1>
       </Wrapper>
     </Fullscreen>

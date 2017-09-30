@@ -9,10 +9,11 @@
 .cover {
   display: flex;
   align-items: center;
-  margin-bottom: 10vh;
+  margin-bottom: 16vh;
   font-size: 1.125rem;
   line-height: 1.5;
-  min-height: 50vh;
+  min-height: 20vh;
+  padding-left: 8vw;
 }
 
 .intro,

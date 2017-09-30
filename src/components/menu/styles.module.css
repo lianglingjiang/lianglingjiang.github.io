@@ -1,17 +1,19 @@
 @import '../../css/variables.css';
 
 .menu {
-  background: var(--colorBlack);
-  color: var(--colorWhite);
-  position: fixed;
-  top: 0;
-  left: 0;
+  background: var(--colorWhite);
+  color: var(--colorBlack);
   z-index: var(--zIndexMenu);
 }
 
 .disable {
   composes: menu;
   display: none;
+}
+
+.navWrapper {
+  text-align: center;
+  margin-top: -calc(2.5 * var(--headerHeight));
 }
 
 .item {

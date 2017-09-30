@@ -13,14 +13,12 @@ const ProjectPanel = ({ project }) => (
     className={classNames(styles.panel, themeStyles[project.theme.light ? 'light' : 'dark'], styles[project.className])}
     style={{ background: `${project.theme.background}` }}
   >
-    <Wrapper>
-      <div className={styles.inner} style={{ backgroundImage: `url(${project.cover})` }}>
-        <div className={styles.content}>
-          <h2>{project.title}</h2>
-          <p>{project.description}</p>
-        </div>
-      </div>
-    </Wrapper>
+    
+    <div className={styles.inner} style={{ backgroundImage: `url(${project.cover})` }}></div>
+    <div className={styles.content}>
+      <h3>{project.title}</h3>
+      <p>{project.description}</p>
+    </div>
   </Link>
 );
 

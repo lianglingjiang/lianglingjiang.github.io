@@ -16,7 +16,7 @@
   position: absolute;
   height: 20%;
   width: 100%;
-  background: var(--colorWhite);
+  background: var(--colorBlack);
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
