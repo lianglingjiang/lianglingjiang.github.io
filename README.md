@@ -5,5 +5,5 @@
 - `yarn install`
 
 ## Run
-- In development: `npm run develop`.
+- In development: `gatsby develop`.
 - Static build: `npm run build`.
