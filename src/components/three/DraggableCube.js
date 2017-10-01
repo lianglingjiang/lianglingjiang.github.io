@@ -1,14 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
 import * as THREE from 'three';
-import PureRenderMixin from 'react/lib/ReactComponentWithPureRenderMixin';
-
-// shared plane for dragging purposes
-// it's good to share because you can drag only one cube at a time
-const dragPlane = new THREE.Plane();
-
-const backVector = new THREE.Vector3(0, 0, -1);
+import PropTypes from 'prop-types';
 
 class DraggableCube extends React.Component {
   static propTypes = {
@@ -34,32 +26,15 @@ class DraggableCube extends React.Component {
 
     this.color = new THREE.Color( 0xffffff);
 
-    const hsl = this.color.getHSL();
-
-    hsl.s = Math.min(1, hsl.s * 1.1);
-    hsl.l = Math.min(1, hsl.l * 1.1);
-
-    const { h, s, l } = hsl;
-
-    this.hoverColor = new THREE.Color().setHSL(h, s, l);
-    this.pressedColor = 0xff0000;
-
     const {
       initialPosition,
     } = props;
 
     this.state = {
-      hovered: false,
-      pressed: false,
       position: initialPosition,
     };
   }
 
-  shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate;
-
-  componentWillUnmount() {
-
-  }
 
   _ref = (mesh) => {
     const {
@@ -76,28 +51,10 @@ class DraggableCube extends React.Component {
     } = this;
 
     const {
-      cursor: {
-        dragging,
-      },
-    } = this.props;
-
-    const {
-      hovered,
-      pressed,
       position,
     } = this.state;
 
-    let color;
-
-    const hoverHighlight = (hovered && !dragging);
-
-    if (pressed) {
-      color = this.pressedColor;
-    } else if (hoverHighlight) {
-      color = this.hoverColor;
-    } else {
-      color = this.color;
-    }
+    let color = this.color;
 
     return (<group
       position={position}
@@ -119,16 +76,6 @@ class DraggableCube extends React.Component {
           shading={THREE.FlatShading}
         />
       </mesh>
-      {hoverHighlight ? <mesh
-        ignorePointerEvents
-      >
-        <geometryResource
-          resourceId="boxGeometry"
-        />
-        <materialResource
-          resourceId="highlightMaterial"
-        />
-      </mesh> : null}
     </group>);
   }
 }
