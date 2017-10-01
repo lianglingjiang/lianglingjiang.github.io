@@ -10,6 +10,7 @@
   --colorWhite: #fff;
 
   /* Z Index Scale */
+  --zIndexThree: -1;
   --zIndexHeader: 2;
   --zIndexMenu: 3;
   --zIndexHamburger: 4;

@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Special Elite', cursive;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+#paprcraft {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  bottom: 50px;
+  left: 50px;
+  font-size: 4em;
+}
+
+img#papr_logo_img {
+  width: 100px;
+  vertical-align: middle;
+  margin-right: 0.4em;
+}

@@ -1,7 +1,7 @@
 @import '../css/variables.css';
 
 .intro {
-  background: var(--colorWhite);
+  background: none;
   color: var(--colorBlack);
   padding: 0 4vw;
 }
