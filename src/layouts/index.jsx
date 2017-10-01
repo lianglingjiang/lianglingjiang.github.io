@@ -21,10 +21,10 @@ class Layout extends React.Component {
     const appChildren = process.env.NODE_ENV === 'production' ? this.props.children({ location }) : children();
 
     return (
-      <div>
-        <MainScene />
+      <div> 
         <Header />
         <div className={styles.page}>{appChildren}</div>
+        <MainScene />
       </div>
     );
   };

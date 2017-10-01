@@ -1,30 +1,25 @@
 import React from 'react';
+import * as THREE from 'three';
+import PropTypes from 'prop-types';
 
 import PureRenderMixin from 'react/lib/ReactComponentWithPureRenderMixin';
-
-import * as THREE from 'three';
 
 import React3 from 'react-three-renderer';
 
 import DraggableCube from './DraggableCube';
 
-import ExampleBase from './ExampleBase';
-
-import TrackballControls from './trackball';
-
-import MouseInput from './MouseInput';
-
 import styles from './styles.module.css';
 
+const width = window.innerWidth; // canvas width
+const height = window.innerHeight; // canvas height
 
-class DraggableCubes extends ExampleBase {
+class DraggableCubes extends React.Component {
   constructor(props, context) {
     super(props, context);
 
     this.state = {
-      cameraPosition: new THREE.Vector3(0, 0, 1000),
+      cameraPosition: new THREE.Vector3(0, 300, 300),
       cameraRotation: new THREE.Euler(),
-      mouseInput: null,
       hovering: false,
       dragging: false,
     };
@@ -34,18 +29,17 @@ class DraggableCubes extends ExampleBase {
       dragging: false,
     };
 
-    this.lightPosition = new THREE.Vector3(0, 500, 2000);
+    this.lightPosition = new THREE.Vector3(0, 300, 3000);
     this.lightTarget = new THREE.Vector3(0, 0, 0);
 
-
     const cubePositions = [];
-    cubePositions.length = 200;
+    cubePositions.length = 100;
 
-    for (let i = 0; i < 200; ++i) {
+    for (let i = 0; i < 100; ++i) {
       cubePositions[i] = new THREE.Vector3(
-        (Math.random()-0.5) * 2000,
-        (Math.random()-0.5) * 2000,
-        (Math.random()-0.5) * 2000
+        (Math.random()-0.5) * 1000,
+        (Math.random()-0.5) * 1000,
+        (Math.random()-0.5) * 1000
       );
     }
 
@@ -64,24 +58,27 @@ class DraggableCubes extends ExampleBase {
   _onAnimate = () => {
     this._onAnimateInternal();
 
-    var minVelocity = 2,
-        maxVelocity = 5;
+    var minVelocity = 0.02,
+        maxVelocity = 0.05;
 
-    for (let i = 0; i < 200; ++i) {
+    let isReverse = Math.random();
+
+    for (let i = 0; i < 100; ++i) {
       if(this.cubes[i].isReverse) {
-        this.cubes[i].rotation.y += Math.random() * 0.1;
-        this.cubes[i].rotation.x += Math.random() * 0.1;
+        this.cubes[i].rotation.y += Math.random() * 0.01;
+        this.cubes[i].rotation.x += Math.random() * 0.01;
       } else {
-        this.cubes[i].rotation.y -= Math.random() * 0.1;
-        this.cubes[i].rotation.x -= Math.random() * 0.1;
+        this.cubes[i].rotation.y -= Math.random() * 0.01;
+        this.cubes[i].rotation.x -= Math.random() * 0.01;
       }
 
-      if(this.cubes[i].position.y < -500){
+      if(this.cubes[i].position.y < -200){
         this.cubes[i].position.x = ( Math.random() - 0.5 ) * 1000;
         this.cubes[i].position.y = ( Math.random() - 0.5 ) * 1000;
-        this.cubes[i].position.y = 500;
+        this.cubes[i].position.y = 200;
       } else {
-        this.cubes[i].position.y -= Math.random() * ( maxVelocity - minVelocity + 1) + minVelocity;
+        this.cubes[i].position.x -= Math.random() * ( maxVelocity - minVelocity + 0.2) + minVelocity * Math.random();
+        this.cubes[i].position.y -= Math.random() * ( maxVelocity - minVelocity + 0.2) + minVelocity * Math.random();
       }
       
     }
@@ -94,24 +91,7 @@ class DraggableCubes extends ExampleBase {
       camera,
     } = this.refs;
 
-    const controls = new TrackballControls(camera);
-
-    controls.rotateSpeed = 1.0;
-    controls.zoomSpeed = 1.2;
-    controls.panSpeed = 0.8;
-    controls.noZoom = false;
-    controls.noPan = false;
-    controls.staticMoving = true;
-    controls.dynamicDampingFactor = 0.3;
-
-    this.controls = controls;
-
-    this.controls.addEventListener('change', this._onTrackballChange);
-
-
   }
-
-  shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate;
 
   _onCubesMounted = (cubes) => {
     this.cubes = cubes;
@@ -145,22 +125,6 @@ class DraggableCubes extends ExampleBase {
     this.cubes[index] = cube;
   };
 
-  _onCubeMouseEnter = () => {
-    if (this._hoveredCubes === 0) {
-      this._onHoverStart();
-    }
-
-    this._hoveredCubes++;
-  };
-
-  _onCubeMouseLeave = () => {
-    this._hoveredCubes--;
-
-    if (this._hoveredCubes === 0) {
-      this._onHoverEnd();
-    }
-  };
-
   _onCubeDragStart = () => {
     
     this._onDragStart();
@@ -180,20 +144,7 @@ class DraggableCubes extends ExampleBase {
     }
   };
 
-  componentDidUpdate(newProps) {
-    const {
-      mouseInput,
-    } = this.refs;
 
-    const {
-      width,
-      height,
-    } = this.props;
-
-    if (width !== newProps.width || height !== newProps.height) {
-      mouseInput.containerResized();
-    }
-  }
 
   _onTrackballChange = () => {
     this.setState({
@@ -202,54 +153,28 @@ class DraggableCubes extends ExampleBase {
     });
   };
 
-  componentWillUnmount() {
-    this.controls.removeEventListener('change', this._onTrackballChange);
 
-    this.controls.dispose();
-    delete this.controls;
-  }
 
   _onAnimateInternal() {
     const {
-      mouseInput,
       camera,
     } = this.refs;
-
-    if (!mouseInput.isReady()) {
-      const {
-        scene,
-        container,
-      } = this.refs;
-
-      mouseInput.ready(scene, container, camera);
-      mouseInput.restrictIntersections(this.cubes);
-      mouseInput.setActive(false);
-    }
-
-    if (this.state.mouseInput !== mouseInput) {
-      this.setState({
-        mouseInput,
-      });
-    }
 
     if (this.state.camera !== camera) {
       this.setState({
         camera,
       });
     }
-
-    this.controls.update();
   }
 
   render() {
-    const width = window.innerWidth; // canvas width
-    const height = window.innerHeight; // canvas height
+    const width = 1.5* window.innerWidth; // canvas width
+    const height = 1.5*window.innerHeight; // canvas height
 
     const {
       cameraPosition,
       cameraRotation,
 
-      mouseInput,
       camera,
 
       hovering,
@@ -281,12 +206,8 @@ class DraggableCubes extends ExampleBase {
         sortObjects={false}
         shadowMapEnabled
         shadowMapType={THREE.PCFShadowMap}
-        clearColor={0xf0f0f0}
+        clearColor={0xffffff}
       >
-        <module
-          ref="mouseInput"
-          descriptor={MouseInput}
-        />
         <resources>
           <cylinderGeometry
             resourceId="boxGeometry"
@@ -294,21 +215,21 @@ class DraggableCubes extends ExampleBase {
             radiusTop={0}
             radiusBottom={20}
             height={20}
-            radialSegments={4}
+            radialSegments={3}
           />
-          <meshBasicMaterial
+          <meshStandardMaterial
             resourceId="highlightMaterial"
-
-            color={0xffff00}
+            shading={THREE.FlatShading}
+            color={0xffffff}
             wireframe
           />
         </resources>
         <scene ref="scene">
           <perspectiveCamera
-            fov={70}
+            fov={140}
             aspect={width / height}
-            near={1}
-            far={10000}
+            near={0.01}
+            far={100000}
             name="mainCamera"
             ref="camera"
             position={cameraPosition}
@@ -319,14 +240,14 @@ class DraggableCubes extends ExampleBase {
           />
           <spotLight
             color={0xffffff}
-            intensity={1.5}
+            intensity={1}
             position={this.lightPosition}
             lookAt={this.lightTarget}
 
             castShadow
-            shadowCameraNear={200}
+            shadowCameraNear={1}
             shadowCameraFar={10000}
-            shadowCameraFov={50}
+            shadowCameraFov={10}
 
             shadowBias={-0.00022}
 
@@ -339,17 +260,12 @@ class DraggableCubes extends ExampleBase {
               return (<DraggableCube
                 key={index}
       
-                mouseInput={mouseInput}
                 camera={camera}
       
                 initialPosition={cubePosition}
                 onCreate={onCreate}
-                onMouseEnter={this._onCubeMouseEnter}
-                onMouseLeave={this._onCubeMouseLeave}
-                onDragStart={this._onCubeDragStart}
-                onDragEnd={this._onCubeDragEnd}
+
                 cursor={this._cursor}
-                isReverse = {Math.random() >= 0.5}
               />);
             })}
           </group>

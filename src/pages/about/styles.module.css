@@ -2,8 +2,14 @@
 
 .about {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  margin: auto;
   margin-bottom: 5rem;
+  width: calc(8 / var(--columnCount) * 100%);
+  background-color: #fff;
+  padding: 4em;
+  box-shadow: 0 3rem 10rem -2rem rgba(0, 0, 0, 0.3);
 }
 
 .intro {
@@ -11,8 +17,9 @@
   padding-right: var(--gutter);
   font-size: 1.125rem;
   line-height: 1.7;
-  padding-right: calc(1 / var(--columnCount) * 100%);
+  padding-left: calc(1 / var(--columnCount) * 100%);
 }
+
 
 .skills {
   width: calc(5 / var(--columnCount) * 100%);
@@ -23,16 +30,6 @@
   display: flex;
 }
 
-.skills:before {
-  content: "";
-  position: absolute;
-  height: 75%;
-  width: 4px;
-  display: block;
-  left: 0;
-  top: 12.5%;
-  background: black;
-}
 
 .referrals {
   display: flex;
