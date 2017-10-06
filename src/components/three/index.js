@@ -86,8 +86,8 @@ class DraggableCubes extends React.Component {
   }
 
   render() {
-    let width = this.state.width;
-    let height = this.state.height;
+    let width = Number(this.state.width);
+    let height = Number(this.state.height);
 
     return (<div
       ref="container"

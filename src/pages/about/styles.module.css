@@ -28,11 +28,11 @@
   justify-content: flex-start;
 }
 
-h2 {
+.addinfo h2 {
   margin-top: 2rem;
 }
 
-h5 {
+.addinfo h5 {
   margin-top: 0.8rem;
 }
 
