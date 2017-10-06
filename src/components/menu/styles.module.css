@@ -1,0 +1,36 @@
+@import '../../css/variables.css';
+
+.menu {
+  color: var(--colorBlack);
+  z-index: var(--zIndexMenu);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.disable {
+  composes: menu;
+  display: none;
+}
+
+.navWrapper {
+  text-align: center;
+  margin-top: -calc(2.5 * var(--headerHeight));
+}
+
+.item {
+  font-family: Medium, Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  line-height: 2.1;
+}
+
+.active {
+  border-bottom: 4px solid var(--colorWhite);
+}
+
+@media (--small) {
+  .item {
+    font-size: 2.2857rem;
+  }
+  .active {
+    border-width: 2px;
+  }
+}

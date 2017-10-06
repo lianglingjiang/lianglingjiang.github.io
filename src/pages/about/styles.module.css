@@ -1,0 +1,121 @@
+@import '../../css/variables.css';
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 5rem;
+  width: calc(8 / var(--columnCount) * 100%);
+  background-color: #fff;
+  padding: 6em;
+  box-shadow: 0 3rem 10rem -2rem rgba(0, 0, 0, 0.3);
+}
+
+.intro {
+  width: calc(7 / var(--columnCount) * 100%);
+  padding-right: var(--gutter);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  padding-left: calc(1 / var(--columnCount) * 100%);
+}
+
+.addinfo {
+  display: flex;
+  flex-direction: column;
+  width: calc(5 / var(--columnCount) * 100%);
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+h5 {
+  margin-top: 0.8rem;
+}
+
+.skills {
+  width: calc(5 / var(--columnCount) * 100%);
+  font-size: 1rem;
+  padding-left: calc(1 / var(--columnCount) * 100%);
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+
+.referrals {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.referral {
+  display: flex;
+  width: calc(6 / var(--columnCount) * 100%);
+  padding-right: var(--gutter);
+  align-items: flex-start;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+.referral img {
+  margin-right: var(--gutter);
+  max-width: 80px;
+  border-radius: 1px;
+}
+
+@media (--medium) {
+  .about {
+    width: calc(10 / var(--columnCount) * 100%);
+    margin-bottom: 3rem;
+  }
+
+  .intro, .addinfo {
+    width: calc(12 / var(--columnCount) * 100%);
+    padding: 0;
+  }
+
+  .addinfo {
+    margin-bottom: 4rem;
+  }
+
+  .intro, .referral {
+    font-size: 1.1428rem;
+  }
+
+  .skills {
+    margin-top: 3rem;
+  }
+
+  .skills:before {
+    display: none;
+  }
+
+  .referral {
+    margin-top: 2rem;
+    width: calc(10 / var(--columnCount) * 100%);
+  }
+}
+
+
+@media (--small) {
+  .about {
+    width: 100%;
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.9)
+  }
+  .intro, .addinfo {
+    width: calc(12 / var(--columnCount) * 100%);
+  }
+
+  .addinfo {
+    margin-bottom: 5rem;
+  }
+
+  .referral img {
+    display: none;
+  }
+}
+
