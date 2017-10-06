@@ -9,16 +9,13 @@ import projects from '../../data/projects';
 import styles from './styles.module.css';
 
 const Work = ({ location }) => (
-  <div>
+  <div className={styles.mainWrapper}>
     <Meta title="Work" description="Design by Liang Lingjiang" location={location} />
+    <h1 className={styles.worksTitle}>2017</h1>
     <Wrapper className={styles.profolio}>
+      
       {projects.map(project => <ProjectPanel project={project} key={project.slug} />)}
 
-      <div className={styles.contact}>
-        <Wrapper>
-          <Contact title="Your project here?" />
-        </Wrapper>
-      </div>
     </Wrapper>
   </div>
 );

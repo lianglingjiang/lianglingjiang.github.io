@@ -1,7 +1,7 @@
 @import '../../css/variables.css';
 
 .header {
-  background: rgba(255, 255, 255, 0.64);
+  background: rgb(255, 255, 255);
   color: var(--colorBlack);
   position: fixed;
   top: 0;

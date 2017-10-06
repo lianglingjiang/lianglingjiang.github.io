@@ -1,14 +1,21 @@
 @import '../../css/variables.css';
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20vh;
+  align-items: center;
+}
 
 .contact a {
   border-bottom: 0;
 }
 .lineBreak {
   height: 3px;
-  width: 100px;
+  width: 200px;
   background: var(--colorBlack);
-  margin: calc(var(--gutter) * 2.5) 0;
+  margin: calc(var(--gutter) * 1) 0;
 }
 
 .email {
@@ -19,8 +26,13 @@
   border-bottom: 1px solid;
 }
 
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .social li {
-  display: inline-block;
-  margin-right: calc(var(--gutter) * 1.5);
+  margin: calc(var(--gutter));
 }
 

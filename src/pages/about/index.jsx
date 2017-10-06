@@ -5,6 +5,7 @@ import ContentPage from '../../components/content-page';
 import Meta from '../../components/meta';
 import OutboundLink from '../../components/outbound-link';
 import Wrapper from '../../components/wrapper';
+import Avatar from '../../components/avatar';
 
 import ahmSrc from './img/ahm.png';
 import inlightSrc from './img/inlight.png';
@@ -18,27 +19,18 @@ const About = ({ location }) => (
     <Meta title="About" location={location} />
     <Wrapper>
       <div className={styles.about}>
-        <section className={styles.intro}>
-          <h1>Hello.</h1>
-          <p>I’m a Product Designer/Product Manager from China. I've been work for Internet Industry for years. I design Apps for both Web and Mobile.</p>
-          <p>I first began my journey into Product Design as Web Designer. I gained a considerable amount of experience that I needed to step into the industry.</p>
-
-          <p>I now work as a Product Designer/Product Manager in PingAn Technology.</p>
+        <section className={styles.addinfo}>
+          <Avatar className={styles.avatar} />
+          <h2>梁凌江</h2>
+          <h5>Liang Lingjiang</h5>
         </section>
-        <aside className={styles.skills}>
-          <div>
-            <h3>Skills</h3>
-            <h4>Presentation</h4>
-            <p>Bootstrap, Css, Html, Less, Postcss, Sass, Stylus</p>
-            <h4>Javascript</h4>
-            <p>Angular, Grunt, Gulp, jQuery, Pug, React, React Native, Redux, Webpack</p>
-            <h4>Server</h4>
-            <p>Express, Mongo, Node, SQL</p>
-            <h4>Other</h4>
-            <p>C, CI, Git, Svn, Unity 3D</p>
-          </div>
-
-        </aside>
+        <section className={styles.intro}>
+          <h1>Hello World.</h1>
+          <p>I’m a Product Designer/Product Manager from China. I've been work for Internet Industry for years. I design Apps for both Web and Mobile.</p>
+          <p>I first began my journey into Product Design as Web Designer from 2002. Witnessed the changes of www and mobile industry over a decade. During years of design pactices, I came across designning many kinds of application and gained a considerable amount of experience of the industry.</p>
+          <p>I also interest in full-stack web dev, the <a href="https://jamstack.org/" target="_blank">Future Web Applications</a> solutions, best practices and other cutting edge field such as Deep-Learning and AI. </p>
+          <p>I am currently work as a Product Designer/Product Manager in <a href="http://tech.pingan.com" target="_blank">PingAn</a>. This works shown in this site are perosonal <bold>side projects only</bold>.</p>
+        </section>
       </div>
 
     </Wrapper>

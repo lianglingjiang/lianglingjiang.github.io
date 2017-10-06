@@ -15,22 +15,22 @@ const Contact = ({ title }) => (
     <div className={styles.lineBreak} />
     <ul className={styles.social}>
       <li>
-        <OutboundLink to="https://github.com/oliverbenns/">
+        <OutboundLink to="https://dribbble.com/lianglj">
+          <Icon name="dribbble" />
+        </OutboundLink>
+      </li>
+      <li>
+        <OutboundLink to="https://github.com/lianglingjiang/">
           <Icon name="github" />
         </OutboundLink>
       </li>
       <li>
-        <OutboundLink to="https://www.linkedin.com/in/oliverbenns">
+        <OutboundLink to="https://www.linkedin.com/in/lianglingjiang/">
           <Icon name="linkedin" />
         </OutboundLink>
       </li>
       <li>
-        <OutboundLink to="https://twitter.com/oliverbenns/">
-          <Icon name="twitter" />
-        </OutboundLink>
-      </li>
-      <li>
-        <OutboundLink to="https://www.instagram.com/oliverbenns">
+        <OutboundLink to="https://www.instagram.com/lianglingjiang/">
           <Icon name="instagram" />
         </OutboundLink>
       </li>

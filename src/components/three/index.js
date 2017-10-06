@@ -13,7 +13,7 @@ class DraggableCubes extends React.Component {
     const cameraPosition = new THREE.Vector3(0, 300, 300);
     const cameraRotation = new THREE.Euler();
 
-    this.lightPosition = new THREE.Vector3(0, 300, 3000);
+    this.lightPosition = new THREE.Vector3(0, 0, 3000);
     this.lightTarget = new THREE.Vector3(0, 0, 0);
 
     const cubePositions = [];
@@ -50,8 +50,8 @@ class DraggableCubes extends React.Component {
         this.cubes[i].rotation.y -= Math.random() * 0.01;
         this.cubes[i].rotation.x -= Math.random() * 0.01;
       }*/
-      this.cubes[i].rotation.y += Math.random() * 0.01;
-      this.cubes[i].rotation.x -= Math.random() * 0.01;
+      this.cubes[i].rotation.y += 0.006;
+      this.cubes[i].rotation.x -= 0.006;
 
       if(this.cubes[i].position.y < -200){
         this.cubes[i].position.x = ( Math.random() - 0.5 ) * 1000;
