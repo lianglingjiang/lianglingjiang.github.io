@@ -1,0 +1,2 @@
+webpackJsonp([0x969d2af4dbc4],{"./node_modules/json-loader/index.js!./.cache/json/work-agilekanban.json":function(n,o){n.exports={pathContext:{}}}});
+//# sourceMappingURL=path---work-agilekanban-a0e39f21c11f6a62c5ab.js.map

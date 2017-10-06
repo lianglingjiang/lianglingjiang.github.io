@@ -16,7 +16,7 @@ class Index extends React.Component {
 
     return (
       <div>
-        <Meta location={location} />
+
         <Fullscreen className={styles.intro} firstItem>
           <Wrapper>
             <h1>

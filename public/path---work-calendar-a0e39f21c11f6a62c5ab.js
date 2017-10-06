@@ -1,0 +1,2 @@
+webpackJsonp([0xce641bd81f6f],{"./node_modules/json-loader/index.js!./.cache/json/work-calendar.json":function(o,e){o.exports={pathContext:{}}}});
+//# sourceMappingURL=path---work-calendar-a0e39f21c11f6a62c5ab.js.map

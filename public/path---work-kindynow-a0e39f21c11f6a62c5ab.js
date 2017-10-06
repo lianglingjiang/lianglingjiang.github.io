@@ -1,0 +1,2 @@
+webpackJsonp([0x8159dadfa135],{"./node_modules/json-loader/index.js!./.cache/json/work-kindynow.json":function(o,n){o.exports={pathContext:{}}}});
+//# sourceMappingURL=path---work-kindynow-a0e39f21c11f6a62c5ab.js.map

@@ -10,6 +10,9 @@ class DraggableCubes extends React.Component {
   constructor(props, context) {
     super(props, context);
 
+    this.state = { width: '0', height: '0' };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+
     const cameraPosition = new THREE.Vector3(0, 300, 300);
     const cameraRotation = new THREE.Euler();
 
@@ -32,6 +35,7 @@ class DraggableCubes extends React.Component {
 
     this.cubes = cubes;
     this.cubePositions = cubePositions;
+
   }
 
   _onAnimate = () => {
@@ -68,9 +72,22 @@ class DraggableCubes extends React.Component {
     this.cubes[index] = cube;
   };
 
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
   render() {
-    const width = 1.5* window.innerWidth; // canvas width
-    const height = 1.5*window.innerHeight; // canvas height
+    let width = this.state.width;
+    let height = this.state.height;
 
     return (<div
       ref="container"
@@ -80,7 +97,7 @@ class DraggableCubes extends React.Component {
         width={width}
         height={height}
         antialias
-        pixelRatio={window.devicePixelRatio}
+        pixelRatio={width/height}
         mainCamera="mainCamera"
         onAnimate={this._onAnimate}
         sortObjects={false}

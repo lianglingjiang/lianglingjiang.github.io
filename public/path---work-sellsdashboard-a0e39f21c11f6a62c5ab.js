@@ -1,0 +1,2 @@
+webpackJsonp([34674277396368],{"./node_modules/json-loader/index.js!./.cache/json/work-sellsdashboard.json":function(o,s){o.exports={pathContext:{}}}});
+//# sourceMappingURL=path---work-sellsdashboard-a0e39f21c11f6a62c5ab.js.map
